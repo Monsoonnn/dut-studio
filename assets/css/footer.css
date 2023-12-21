@@ -2,36 +2,41 @@
     padding: 50px 0;
     background-color: #161616;
 }
-.footer__logo img{
-    margin-left: -7vh;
-}
+
 .footer__social{
     display: flex;
+}
+.footer__logo{
+    margin-top: 40px;
 }
 .footer__logo i{
     display: block;
     font-size: 28px;
-    margin-top: -50px;
     margin-right: 5px;
+    margin-top: 5px;
+    color: #fff;
 }
 .title{
     font-size: 24px;
     font-weight: 800;
 }
 .footer__list{
+    margin-top: 30px;
     max-width: 300px;
 }
 .footer__list li{
+    padding: 10px;
     cursor: pointer;
 }
 .footer__subscribe{
     margin-top: 20px;
 }
 .footer__subscribe__title{
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Anton', sans-serif;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 18px;
 }
 .footer__input{
     width: 80%;

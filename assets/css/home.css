@@ -2,7 +2,7 @@
 /* custom bootstap */
 @media (min-width: 1200px){
     .container{
-        max-width: 1500px;
+        max-width: 1300px;
     }
     .col-xl-6{
         padding-left: 0;
@@ -16,7 +16,10 @@
     }
 }
 
-
+body{
+    background-color: black;
+    color: #fff;
+}
 /* Section-1 */
 .section1{
     background-repeat: no-repeat;
