@@ -1,3 +1,9 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 /* header */
 .header {
     display: flex;
@@ -61,9 +67,9 @@
     align-content: center;
 }
 
-.header__about,
-.header__products,
-.header__sign-in-true {
+.header .header__about,
+.header .header__products,
+.header .header__sign-in-true {
     position: relative;
     transition: all 1s;
 }
@@ -102,7 +108,7 @@
     display: none;
     position: absolute;
     top: 65px;
-    left: 18px;
+    left: 15px;
     width: 180px;
     background-color: #1A1819;
 }

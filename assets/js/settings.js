@@ -48,8 +48,8 @@ if (isLogin == 'true') {
                     <p>Nguyễn Dũng</p>
                     <i class="fa-solid fa-caret-down"></i>
                     <ul class="header__sign-in-true__down">
-                        <li><a href="login/account_setting.html">Settings</a></li>
-                        <li><a href="index.html" id="log-out">Logout</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="../index.html" id="log-out">Logout</a></li>
                     </ul>
             </div>`
     const logout = document.querySelector("#log-out")
@@ -71,9 +71,9 @@ if (isLogin == 'true' && isAdmin == 'true') {
                     <p>Admin DUT</p>
                     <i class="fa-solid fa-caret-down"></i>
                     <ul class="header__sign-in-true__down">
-                        <li><a href="admin/dashboard.html">Manager</a></li>
-                        <li><a href="login/account_setting.html">Settings</a></li>
-                        <li><a href="index.html" id="log-out">Logout</a></li>
+                        <li><a href="../admin/dashboard.html">Manager</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="../index.html" id="log-out">Logout</a></li>
                     </ul>
             </div>`
     const logout = document.querySelector("#log-out")
@@ -89,12 +89,8 @@ if (isLogin == 'true' && isAdmin == 'true') {
             })
 }
 
-// if( isLogin == 'false'){
-//     const login__button = document.querySelector("#sign-in-false")
-//     login__button.addEventListener("click", (e) => {
-//         setCookie("isLogin", "true", 1);
-//     })
-// }
+
+
 
 
 

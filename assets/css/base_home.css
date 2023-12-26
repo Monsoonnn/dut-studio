@@ -38,7 +38,7 @@ swiper {
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 8/16;
+    aspect-ratio: 8/18;
   }
 
   .swiper-slide img {

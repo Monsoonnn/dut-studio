@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@media (min-width: 1200px){
+    
+}
+
+@media (min-width: 1600px){
+    .container{
+        max-width: 1300px;
+    }
+}
+
+@media (min-width: 1800px){
+    .container{
+        max-width: 1500px;
+    }
+}
+
+.active{
+    background-color: #B20303;
+    border-radius: 15px;
+}
+
+.hr{
+    border-top: 1px solid #fff;
+    margin: 0 25px;
+    margin-bottom: 10px;
+}
+
+/* Slide bar */
+.slidebar {
+    position: fixed;
+    color: white;
+    background-color: black;
+    width: 15vw;
+    height: 100vh;
+}
+
+.slidebar i {
+    margin-right: 10px;
+}
+.slidebar a {
+   display: flex;
+   align-items: center;
+}
+.slidebar p{
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+.slidebar__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.slidebar__dashboard,
+.slidebar__posts,
+.slidebar__comments,
+.slidebar__analytics,
+.slidebar__settings,
+.slidebar__help {
+    font-family: 'Anton', sans-serif;
+
+    padding: 15px 1vw;
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.slidebar__dashboard:hover,
+.slidebar__posts:hover,
+.slidebar__comments:hover,
+.slidebar__analytics:hover,
+.slidebar__settings:hover,
+.slidebar__help:hover {
+    background-color: #B20303;
+    border-radius: 15px;
+}
+
+
+.slidebar__logo p {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    margin: 0px;
+}
+
+.slidebar__logo img {
+    width: 80px;
+}
+/* End Slide bar */
+.posts{
+    margin-left: 15vw;
+}
+
+/* Header */
+.header{
+    width: 85vw;
+    position: fixed;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.header__title{
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    margin: 0px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header__nav i{
+    margin: 0 20px;
+    font-size: 24px;
+}
+.header__user{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__user img{
+    width: 50px;
+    object-fit: cover;
+}
+/* End Header */

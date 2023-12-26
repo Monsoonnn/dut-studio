@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
+} */
+
+.body {
+    background-image: url(../../images/index_images/bg1.jpg);
+    background-attachment: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#wrapper {
+    background-color: white;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+#wrapper h1 {
+    font-family: 'Anton', sans-serif;
+    color: #B20303;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+#wrapper .input-box {
+    width: 100%;
+    height: 54px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#wrapper .input-box label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #B20303;
+    margin-bottom: 1px;
+    font-weight: 500;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #E3E3E3;
+    border-radius: 5px;
+    color: #B20303;
+    padding: 20px;
+}
+
+.input-box i {
+    color: #B20303;
+    position: absolute;
+    right: 20px;
+    top: 85%;
+}
+
+#wrapper .save-account label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #B20303;
+}
+
+#wrapper .save-account input {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: #E3E3E3;
+    border-radius: 5px;
+}
+
+#wrapper .button-signup {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    height: 54px;
+    background-color: #B20303;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 40px;
+    margin-top: 5px;
+}
+
+#wrapper .button-signup:hover {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    height: 54px;
+    background-color: white;
+    color: #B20303;
+    border: 1px solid #B20303;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 40px;
+    margin-top: 5px;
+}
+
+
+#wrapper .signin-others {
+    width: 32%;
+    height: 45px;
+    float: left;
+    margin: 10px 2px;
+    background-color: white;
+    color: #B20303;
+    border: 1px solid #B20303;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#wrapper .signin-others:hover {
+    width: 32%;
+    height: 45px;
+    float: left;
+    margin: 10px 2px;
+    background-color: #B20303;
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 4px;
+}
+
+#wrapper .forgot-create {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #B20303;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+#wrapper .forgot-create:hover {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #B20303;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
