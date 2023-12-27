@@ -48,7 +48,7 @@ if (isLogin == 'true') {
                     <p>Nguyễn Dũng</p>
                     <i class="fa-solid fa-caret-down"></i>
                     <ul class="header__sign-in-true__down">
-                        <li><a href="login/account_setting.html">Settings</a></li>
+                        <li><a href="users/account_setting.html">Settings</a></li>
                         <li><a href="index.html" id="log-out">Logout</a></li>
                     </ul>
             </div>`
@@ -56,10 +56,6 @@ if (isLogin == 'true') {
     logout.addEventListener("click", (e) => {
                 setCookie("isLogin", "false", 1);
                 var login = document.querySelector("#sign-in");
-                login.innerHTML = `
-                        <div class="header__sign-in-false" id="sign-in-false">
-                            <a href="admin/dashboard.html">Sign in</a>
-                        </div>`
                 location.reload;
             })
 }
@@ -72,7 +68,6 @@ if (isLogin == 'true' && isAdmin == 'true') {
                     <i class="fa-solid fa-caret-down"></i>
                     <ul class="header__sign-in-true__down">
                         <li><a href="admin/dashboard.html">Manager</a></li>
-                        <li><a href="login/account_setting.html">Settings</a></li>
                         <li><a href="index.html" id="log-out">Logout</a></li>
                     </ul>
             </div>`
@@ -81,10 +76,6 @@ if (isLogin == 'true' && isAdmin == 'true') {
                 setCookie("isAdmin", "false", 1);
                 setCookie("isLogin", "false", 1);
                 var login = document.querySelector("#sign-in");
-                login.innerHTML = `
-                        <div class="header__sign-in-false" id="sign-in-false">
-                            <a href="admin/dashboard.html">Sign in</a>
-                        </div>`
                 location.reload;
             })
 }
