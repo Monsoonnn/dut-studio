@@ -22,12 +22,29 @@
 </head>
 
 <body>
+    <div class="modal__confirm" id="modalDel">
+        <div class="mask">
+        </div>
+        <div class="modal__box">
+            <div class="modal__title">
+                Are you sure want to delete it?
+            </div>
+            <div class="modal__options">
+                <div class="modal__yes" id="yes">
+                    YES
+                </div>
+                <div class="modal__no" id="no">
+                    NO
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
         <div class="slidebar">
             <div class="slidebar__logo">
                 <a href="../index.html">
-                    <img src="../assets/images/logo2.png" alt="" srcset="">
-                    <p>DUT STUDIO</p>
+                    <img src="../assets/images/footer_logo.png" alt="" srcset="">
                 </a>
             </div>
             <div class="slidebar__dashboard">
@@ -85,9 +102,198 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="posts__seacrh">
+                <div class="container">
+                    <div class="row">
+                        <input class="search__bar" placeholder="Search for the post you need">
+                        </input>
+                        <div class="search__button">
+                            SEARCH
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts__filter">
+                <div class="container">
+                    <div class="filter__icon">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </div>
+                    <ul class="filter__list">
+                        <li>
+                            News
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            Category
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            Views
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            Rate
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li>
+                            A-Z
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <div class="create-new">
+                            CREATE NEW
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="posts__list">
+                <div class="container">
+                    <div class="list__postBox">
+                        <div class="list__postBox__img">
+                            <img src="../assets/images/bg4.jpg" alt="" srcset="">
+                        </div>
+                        <div class="list__postBox__id">
+                            GAME UPDATE #1
+                        </div>
+                        <div class="list__postBox__title">
+                            THE DEATH WAS RELEASED THIS MONTH
+                        </div>
+                        <div class="list__postBox__desc">
+                            The Death | Thần Trùng is a Viet Nam psychological horror adventure game.Note that the game
+                            has some creepy, startling and scary scenes. Some flashes of light can be annoying for
+                            sensitive people.
+                        </div>
+                        <div class="list__postBox__interact">
+                            <div class="like">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                1K4 LIKE THIS
+                            </div>
+                            <div class="heart">
+                                <i class="fa-solid fa-heart"></i>
+                                1K VERY INTERESTED
+                            </div>
+                            <div class="list__postBox__button">
+                                <div class="delete" id="delete">
+                                    DELETE
+                                </div>
+                                <div class="edit" id="edit">
+                                    EDIT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list__postBox">
+                        <div class="list__postBox__img">
+                            <img src="../assets/images/event.jpg" alt="" srcset="">
+                        </div>
+                        <div class="list__postBox__id">
+                            EVENT UPDATE #1
+                        </div>
+                        <div class="list__postBox__title">
+                            SUPER UNIQUE RELEASE DAY EVENT
+                        </div>
+                        <div class="list__postBox__desc">
+                            The Death | Thần Trùng is a Viet Nam psychological horror adventure game about to be
+                            released by DUT studio. So we created an event for fans who have been waiting for this
+                            product.
+                        </div>
+                        <div class="list__postBox__interact">
+                            <div class="like">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                2K LIKE THIS
+                            </div>
+                            <div class="heart">
+                                <i class="fa-solid fa-heart"></i>
+                                1K VERY INTERESTED
+                            </div>
+                            <div class="list__postBox__button">
+                                <div class="delete" id="delete">
+                                    DELETE
+                                </div>
+                                <div class="edit" id="edit">
+                                    EDIT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list__postBox">
+                        <div class="list__postBox__img">
+                            <img src="../assets/images/staff.jpg" alt="" srcset="">
+                        </div>
+                        <div class="list__postBox__id">
+                            JOBS UPDATE #1
+                        </div>
+                        <div class="list__postBox__title">
+                            DUT STUDIO NEEDS TO FIND EVENT ORGANIZATION STAFF
+                        </div>
+                        <div class="list__postBox__desc">
+                            The Death | Thần Trùng has been completed and is about to be released. We are planning to
+                            hold an event for the fans. So we need your help. If you are interested, please read through
+                            our requirements.
+                        </div>
+                        <div class="list__postBox__interact">
+                            <div class="like">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                1K LIKE THIS
+                            </div>
+                            <div class="heart">
+                                <i class="fa-solid fa-heart"></i>
+                                3K VERY INTERESTED
+                            </div>
+                            <div class="list__postBox__button">
+                                <div class="delete" id="delete">
+                                    DELETE
+                                </div>
+                                <div class="edit" id="edit">
+                                    EDIT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="load__item">
+                        LOAD MORE
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="modalNew__create" id="modalNew">
+            <div class="mask">
+            </div>
+            <div class="modalNew__box">
+                <div class="modalNew__title">
+                    QUICK NEW
+                </div>
+                <i class="fa-solid fa-rectangle-xmark" id="closeModal"></i>
+                <form action="#" class="modal__form">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="newTitle" placeholder="ENTER YOUR TITLE">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="newDescription" placeholder="ENTER YOUR DESCRIPTION">
+                    <label for="content">Content</label>
+                    <textarea name="content" cols="30" rows="10" id="newContent"
+                        placeholder="COPY AND PASTE YOUR CONTENT IN HERE &#10 EXAMPLE: &#10 1. HIS IS CONTENT TEXT"></textarea>
+                    <label for="img">IMAGES</label>
+                    <div class="inputFile">
+                        <i class="fa-solid fa-upload"></i>
+                        <div class="form-upFile">UPLOAD YOUR IMAGES</div>
+                        <select name="positon" id="positon">
+                            <option value="top">TOP</option>
+                            <option value="middle">MIDDLE</option>
+                            <option value="bottom">BOTTOM</option>
+                        </select>
+                        <input type="file" name="img" id="newFile" accept="image/png, image/jpeg">
+                    </div>
+                    <div class="preview">
+                        <p>No files currently selected for upload</p>
+                    </div>
+                    <button type="submit" class="submit">COMPELTE</button>
+                </form>
+            </div>
+        </div>
+
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -100,9 +306,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="../assets/js/dashboard.js">
+    <script src="../assets/js/posts.js"></script>
 
-    </script>
 
 </body>
 
