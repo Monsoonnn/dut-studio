@@ -241,7 +241,7 @@ html{
 #section1{
     padding-top:56%;
     position: relative;
-    background: url('/webcuoiki/assets/images/index_images/bg2.jpg') top center /cover no-repeat;
+    background: url('../../images/index_images/bg2.jpg') top center /cover no-repeat;
 }
 .sec1_content{
     position: absolute;

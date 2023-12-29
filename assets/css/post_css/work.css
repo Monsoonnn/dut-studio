@@ -244,7 +244,7 @@ html{
     height: 100vh;
     padding-top: 50px;
     position: relative;
-    background: url('/webcuoiki/assets/images/index_images/bg1.jpg') top center /cover no-repeat;
+    background: url('../../images/index_images/bg1.jpg') top center /cover no-repeat;
     display: flex;
     align-items: center;
 }
