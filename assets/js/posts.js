@@ -75,16 +75,21 @@ function updateImageDisplay() {
         for (const file of curFiles) {
             const listItem = document.createElement("li");
             const para = document.createElement("p");
+            const positionPara = document.createElement("p")
+            const br = document.createElement("br")
             if (validFileType(file)) {
+                const position = document.querySelector("#positon")
                 para.textContent = `File name ${file.name}, file size ${returnFileSize(
                     file.size,
-                )}.`;
+                )}`;
+                positionPara.textContent = `--- ` + position.value;
                 const image = document.createElement("img");
                 image.src = URL.createObjectURL(file);
                 image.alt = image.title = file.name;
-
+                    
                 listItem.appendChild(image);
                 listItem.appendChild(para);
+                listItem.appendChild(positionPara);
             } else {
                 para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
                 listItem.appendChild(para);

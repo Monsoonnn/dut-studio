@@ -1,3 +1,5 @@
+
+
 // login-in
 
 
@@ -31,13 +33,10 @@ function deleteCookie(cname) {
 }
 
 var isLogin = getCookie("isLogin");
-var isAdmin = getCookie("isAdmin")
+var isAdmin = getCookie("isAdmin");
 
 if (!isLogin) {
     setCookie("isLogin", "false", 1);
-}
-if (isLogin == 'false') {
-    location.href="/index.html"
 }
 if (isLogin == 'true') {
     
@@ -59,6 +58,26 @@ if (isLogin == 'true') {
                         <div class="header__sign-in-false" id="sign-in-false">
                             <a href="admin/dashboard.html">Sign in</a>
                         </div>`
+                location.reload;
+            })
+}
+if (isLogin == 'true' && isAdmin == 'true') {
+    
+    var login = document.querySelector("#sign-in");
+    login.innerHTML = `
+            <div class="header__sign-in-true">
+                    <p>Admin DUT</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="header__sign-in-true__down">
+                        <li><a href="../admin/dashboard.html">Manager</a></li>
+                        <li><a href="../index.html" id="log-out">Logout</a></li>
+                    </ul>
+            </div>`
+    const logout = document.querySelector("#log-out")
+    logout.addEventListener("click", (e) => {
+                setCookie("isAdmin", "false", 1);
+                setCookie("isLogin", "false", 1);
+                var login = document.querySelector("#sign-in");
                 location.reload;
             })
 }

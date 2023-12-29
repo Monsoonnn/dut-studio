@@ -448,6 +448,7 @@ body{
 #positon{
     position: absolute;
     top: 0px;
+    width: 100px;
     left: 250px;
     opacity: 100;
     cursor: pointer;
