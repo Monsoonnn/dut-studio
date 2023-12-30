@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="icon" href="../assets/images/dungct.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../assets/css/base_home.css">
+    <link rel="stylesheet" href="../assets/css/admin_settings.css">
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="slidebar">
+            <div class="slidebar__logo">
+                <a href="../index.html">
+                    <img src="../assets/images/footer_logo.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="slidebar__dashboard">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-list"></i>
+                    <p>DASH BOARD</p>
+                </a>
+            </div>
+            <div class="slidebar__posts">
+                <a href="posts.html">
+                    <i class="fa-solid fa-pen"></i>
+                    <p>POSTS</p>
+                </a>
+            </div>
+            <div class="slidebar__comments">
+                <a href="comments.html">
+                    <i class="fa-solid fa-comments"></i>
+                    <p>COMMENTS</p>
+                </a>
+            </div>
+            <div class="slidebar__analytics ">
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <p>ANALYTICS</p>
+                </a>
+            </div>
+            <div class="slidebar__settings active">
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>SETTINGS</p>
+                </a>
+            </div>
+            <div class="hr"></div>
+            <div class="slidebar__help">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <p>HELP</p>
+                </a>
+            </div>
+        </div>
+        <div class="settings">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__title col-xl-6">
+                            SETTINGS
+                        </div>
+                        <div class="header__nav col-xl-6">
+                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-gear"></i>
+                            <div class="header__user">
+                                <img src="../assets/images/dungct.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <div class="container">
+                    <div class="account__title">
+                        ACCOUNT SETTINGS
+                    </div>
+                    <div class="account__content">
+                        <div class="account__id">
+                            DUT ID
+                            <p>Your Dut ID is used to find you in our system.</p>
+                        </div>
+                        <div class="account__data">
+                            NguyenDungAdmin
+                        </div>
+                    </div>
+                    <div class="account__content">
+                        <div class="account__email">
+                            EMAIL
+                        </div>
+                        <div class="account__dataE">
+                            AdminDung@gmail.com
+                        </div>
+                    </div>
+                    <div class="account__content">
+                        <div class="account__password">
+                            PASSWORD
+                            <p>We recommend that you periodically update your password to help prevent unauthorized
+                                access to your account.</p>
+                        </div>
+                        <div class="account__change">
+                            <form>
+                                <div class="account__change-pass">
+                                    <div class="current__title">
+                                        Current Password
+                                    </div>
+                                    <input type="password">
+                                    <div class="new__title">
+                                        New Pasword
+                                    </div>
+                                    <input type="password" required>
+
+                                </div>
+                                <button type="submit">SAVE CHANGES</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification">
+                <div class="container">
+                    <div class="account__title">
+                        NOTIFICATION SETTINGS
+                    </div>
+                    <div class="account__content">
+                        <div class="notifi__title">
+                            GET NOTIFICATIONS
+                        </div>
+                        <div class="notifi__data">
+                            Receive via email
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="local">
+                <div class="container">
+                    <div class="account__title">
+                        LANGUAGE AND AREA
+                    </div>
+                    <div class="account__content">
+                        <div class="notifi__title">
+                            CURRENT LANGUAGE
+                        </div>
+                        <div class="notifi__data">
+                            English
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="account__content">
+                        <div class="notifi__title">
+                            AREA
+                        </div>
+                        <div class="notifi__data">
+                            Viet Nam
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display">
+                <div class="container">
+                    <div class="account__title">
+                        DISPLAY SETTINGS
+                    </div>
+                    <div class="account__content">
+                        <div class="notifi__title">
+                            MODE
+                        </div>
+                        <div class="notifi__data">
+                            Light
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="account__content">
+                        <div class="notifi__title">
+                            POP-UP
+                        </div>
+                        <div class="notifi__data">
+                            Off
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="authen">
+                <div class="container">
+                    <div class="account__title">
+                        Authentication
+                    </div>
+                    <div class="account__content">
+                        <div class="authen__password">
+                            Two-Factor
+                            Authentication
+                            <p>Protect your account from unauthorized access by requiring a secure code when signing in.
+                            </p>
+                        </div>
+                        <div class="authen-by-email">
+                            <div class="authen__email">
+                                <i class="fa-solid fa-envelopes-bulk"></i>
+                                <div class="authen__type">
+                                    <p>EMAIL</p>
+                                    <p>ENABLED</p>
+                                </div>
+                                <div class="authen__button">
+                                    DISABLE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../assets/js/analytics.js"></script>
+
+
+</body>
+
+</html>

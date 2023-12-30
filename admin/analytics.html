@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="../assets/css/base_home.css">
-    <link rel="stylesheet" href="../assets/css/admin_comments.css">
+    <link rel="stylesheet" href="../assets/css/admin_analytics.css">
 
 </head>
 
@@ -37,19 +37,19 @@
                     <p>DASH BOARD</p>
                 </a>
             </div>
-            <div class="slidebar__posts ">
+            <div class="slidebar__posts">
                 <a href="posts.html">
                     <i class="fa-solid fa-pen"></i>
                     <p>POSTS</p>
                 </a>
             </div>
-            <div class="slidebar__comments active">
-                <a href="#">
+            <div class="slidebar__comments">
+                <a href="comments.html">
                     <i class="fa-solid fa-comments"></i>
                     <p>COMMENTS</p>
                 </a>
             </div>
-            <div class="slidebar__analytics">
+            <div class="slidebar__analytics active">
                 <a href="analytics.html">
                     <i class="fa-solid fa-chart-column"></i>
                     <p>ANALYTICS</p>
@@ -69,12 +69,12 @@
                 </a>
             </div>
         </div>
-        <div class="comments">
+        <div class="analytics">
             <div class="header">
                 <div class="container">
                     <div class="row">
                         <div class="header__title col-xl-6">
-                            COMMENTS
+                            ANALYTICS
                         </div>
                         <div class="header__nav col-xl-6">
                             <i class="fa-solid fa-bell"></i>
@@ -86,155 +86,41 @@
                     </div>
                 </div>
             </div>
-            <div class="comments__seacrh">
-                <div class="container">
-                    <div class="row">
-                        <input class="search__bar" placeholder="Search for the comment you need">
-                        </input>
-                        <div class="search__button">
-                            SEARCH
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comments__filter">
-                <div class="container">
-                    <div class="filter__icon">
-                        <i class="fa-solid fa-filter"></i>
-                        Filter
-                    </div>
-                    <ul class="filter__list">
-                        <li>
-                            A-Z
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            Post
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            Date
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            Status
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </li>
-                        <li>
-                            Approve
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </li>
-                        
-                    </ul>
-                </div>
-
-            </div>
-            <div class="comments__table">
-                <div class="container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>ID</td>
-                                <td>User</td>
-                                <td>Content</td>
-                                <td>Post</td>
-                                <td>Date</td>
-                                <td>Status</td>
-                                <td colspan="2">Approve</td>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Provip</td>
-                                <td>This game is so good</td>
-                                <td>#Game123</td>
-                                <td>10/7/2023</td>
-                                <td class="status green">Publised</td>
-                                <td class="approve green">Accpeted</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                                
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Mon1</td>
-                                <td>This game is &@#@$!</td>
-                                <td>#Game123</td>
-                                <td>10/7/2023</td>
-                                <td class="status red">Canceled</td>
-                                <td class="approve red">Denied</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>John</td>
-                                <td>So bad </td>
-                                <td>#Game123</td>
-                                <td>10/7/2023</td>
-                                <td class="status red">Canceled</td>
-                                <td class="approve red">Denied</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Sus123</td>
-                                <td>WTF!!!! Amazing </td>
-                                <td>#Game123</td>
-                                <td>11/7/2023</td>
-                                <td class="status orange">Procesing</td>
-                                <td class="approve orange">Waiting</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Sieuvip</td>
-                                <td>Nice game </td>
-                                <td>#Game123</td>
-                                <td>12/7/2023</td>
-                                <td class="status green">Published</td>
-                                <td class="approve green">Auto</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Smith</td>
-                                <td>Too bad fỏ 20$</td>
-                                <td>#Game123</td>
-                                <td>12/7/2023</td>
-                                <td class="status orange">Processing</td>
-                                <td class="approve orange">Waiting</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Quanh</td>
-                                <td>?? qua kho</td>
-                                <td>#Game123</td>
-                                <td>12/7/2023</td>
-                                <td class="status red">Canceld</td>
-                                <td class="approve green">Auto</td>
-                                <td><i class="fa-solid fa-chevron-down"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div id="load__item">
-                LOAD MORE
-            </div>
-            <div class="comments__users">
+            <div class="user__access">
                 <div class="container">
                     <div class="user__title">
-                        STATS PER DAY
+                        USERS ACCESS
                     </div>
+                    <div class="user__filter">
+                        <div class="filter__box">
+                            Date:
+                            <p>This month</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="filter__box">
+                            Type:
+                            <p>Average access</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="user__download">
+                            <i class="fa-solid fa-download"></i>
+                            Download report
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="dashBoard__users">
+                <div class="container">
                     <div class="user__content">
                         <div class="user__content-box trend-up">
                             <div class="user__content-box__title">
-                                TOTAL COMMENT
+                                NEW USERS
                             </div>
                             <div class="user__content-box__number">
-                                500
+                                200
                             </div>
                             <div class="user__content-box__day">
                                 <i class="fa-solid fa-arrow-trend-up"></i>
@@ -244,10 +130,10 @@
                         </div>
                         <div class="user__content-box trend-down">
                             <div class="user__content-box__title">
-                                ACCPETED COMMENTS
+                                HIGHEST ACCESS
                             </div>
                             <div class="user__content-box__number">
-                                345
+                                800
                             </div>
                             <div class="user__content-box__day">
                                 <i class="fa-solid fa-arrow-trend-down down trend-down-i"></i>
@@ -257,10 +143,11 @@
                         </div>
                         <div class="user__content-box trend-down">
                             <div class="user__content-box__title">
-                                WAITING COMMENTS
+                                AVERAGE TIME SPENDING 
                             </div>
                             <div class="user__content-box__number">
-                                50
+                                30
+                                <p>MIN</p>
                             </div>
                             <div class="user__content-box__day ">
                                 <i class="fa-solid fa-arrow-trend-down trend-down-i"></i>
@@ -270,10 +157,10 @@
                         </div>
                         <div class="user__content-box trend-up">
                             <div class="user__content-box__title">
-                                DENIED COMMENT
+                                LOWEST ACCESS
                             </div>
                             <div class="user__content-box__number">
-                                20
+                                80
                             </div>
                             <div class="user__content-box__day">
                                 <i class="fa-solid fa-arrow-trend-up"></i>
@@ -284,18 +171,123 @@
                     </div>
                 </div>
             </div>
-            <div class="comments__graph">
+            <div class="interact__post">
                 <div class="container">
-                    <div class="comments__title">
-                        GRAPH
+                    <div class="user__title">
+                        INTERACT POST
+                    </div>
+                    <div class="user__filter">
+                        <div class="filter__box">
+                            Date:
+                            <p>This month</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="filter__box">
+                            Type:
+                            <p>ALL</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="user__download">
+                            <i class="fa-solid fa-download"></i>
+                            Download report
+                        </div>
                     </div>
                     <div class="graph">
-                        <canvas id="myChart"></canvas>
+                        <canvas id="myChart2"></canvas>
                     </div>
                 </div>
             </div>
+            <div class="comments__table">
+                <div class="container">
+                    <div class="user__title">
+                        TOP INTERACT POST
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Type</td>
+                                <td>Comments</td>
+                                <td>Like</td>
+                                <td>Heart</td>
+                                <td>Status</td>
+                                <td>Approve</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#Game123</td>
+                                <td>Game</td>
+                                <td>9/11/2023</td>
+                                <td>2003</td>
+                                <td>300</td>
+                                <td>178</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>#Game124</td>
+                                <td>Adventure</td>
+                                <td>12/11/2023</td>
+                                <td>1502</td>
+                                <td>210</td>
+                                <td>92</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>#Game125</td>
+                                <td>Action</td>
+                                <td>13/11/2023</td>
+                                <td>1800</td>
+                                <td>275</td>
+                                <td>120</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>#Game126</td>
+                                <td>Sports</td>
+                                <td>15/11/2023</td>
+                                <td>1205</td>
+                                <td>180</td>
+                                <td>85</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>#Game127</td>
+                                <td>Strategy</td>
+                                <td>16/11/2023</td>
+                                <td>1350</td>
+                                <td>195</td>
+                                <td>100</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>#Game128</td>
+                                <td>Racing</td>
+                                <td>18/11/2023</td>
+                                <td>950</td>
+                                <td>150</td>
+                                <td>70</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>#Game129</td>
+                                <td>RPG</td>
+                                <td>12/11/2023</td>
+                                <td>1700</td>
+                                <td>240</td>
+                                <td>110</td>
+                                <td class="approve green">Ongoing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="load__item">
+                LOAD MORE
         </div>
-       
+        
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -309,7 +301,9 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../assets/js/comments.js"></script>
+
+    <script src="../assets/js/analytics.js"></script>
+
 
 </body>
 
