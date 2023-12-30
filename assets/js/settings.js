@@ -37,7 +37,7 @@ if (!isLogin) {
     setCookie("isLogin", "false", 1);
 }
 if (isLogin == 'false') {
-    location.href="/index.html"
+    location.href="https://dut-studio.vercel.app/index.html"
 }
 if (isLogin == 'true') {
     
