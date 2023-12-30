@@ -57,7 +57,7 @@ if (isLogin == 'true') {
                 var login = document.querySelector("#sign-in");
                 login.innerHTML = `
                         <div class="header__sign-in-false" id="sign-in-false">
-                            <a href="../login/login">Sign in</a>
+                            <a href="../login/login.html">Sign in</a>
                         </div>`
                 location.reload;
             })
