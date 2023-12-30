@@ -442,7 +442,9 @@ tbody tr td i{
     font-size: 28px;
     color: black; 
 }
-
+.comments__graph{
+    padding-bottom: 50px;
+}
 /* End Graph */
 .show {
     display: flex;
