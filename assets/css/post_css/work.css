@@ -475,3 +475,6 @@ html{
 .active{
     display: block;
 }
+.header__news a{
+    padding: 18px;
+}

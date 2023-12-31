@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+li{
+    display: flex;
+    align-content: center;
+    padding: 20px;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.news_title{
+    display: block;
+    padding-top: 200px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding-left: 40vh;
+    padding-right: 40vh;
+}
+.news_desc{
+    font-size: 55px;
+    font-family: 'Anton',sans-serif;
+}
+.news_time{
+    font-size: 30px;
+    font-family: 'DM Sans',sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.news_img{
+    text-align: center;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    background-color: black;
+}
+.news_img img{
+    width: 1300px;
+    height: 730px;
+}
+.news_content{
+    padding-left: 20vh;
+    padding-right: 15vh;
+    text-align: left;
+    background-color: black;
+    color: #fff;
+}
+.news_content p{
+    padding-top: 25px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+}
+
+.header__news a{
+    padding: 18px;
+}
+
+

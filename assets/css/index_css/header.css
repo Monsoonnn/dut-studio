@@ -196,5 +196,7 @@ html{
     top: 35px;
     left: 30px;
 }
-
+.header__news a{
+    padding-top: 18px;
+}
 /* End header */
