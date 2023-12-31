@@ -244,7 +244,7 @@ html{
     height: 100vh;
     padding-top: 50px;
     position: relative;
-    background: url('../../images/index_images/bg1.jpg') top center /cover no-repeat;
+    background: url('../../images/bg1.jpg') center center /cover no-repeat;
     display: flex;
     align-items: center;
 }
@@ -266,6 +266,7 @@ html{
     text-align: center;
     padding: 8px 30px;
     border-radius: 35px;
+    margin-top: -10px;
 }
 .button:hover{
     color: #fff;

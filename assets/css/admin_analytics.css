@@ -252,14 +252,14 @@ body {
 
 .user__content-box__title {
     font-family: 'Anton', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #888585;
     margin-bottom: 5px;
 }
 
 .user__content-box__number {
     font-family: 'Anton', sans-serif;
-    font-size: 35px;
+    font-size: 32px;
     color: black;
     margin-bottom: 10px;
     display: flex;
@@ -269,7 +269,7 @@ body {
     font-size: 20px;
     color: black;
     margin-bottom: 0;
-    padding-top: 16px;
+    padding-top: 12px;
 }
 .user__content-box__day {
     display: flex;
@@ -346,7 +346,7 @@ thead tr tr {
 thead td {
     font-size: 20px;
     font-weight: 500;
-    padding: 0 4vw;
+    padding: 0 2vw;
     width: 10%;
     padding-bottom: 5px;
     padding-top: 5px;
