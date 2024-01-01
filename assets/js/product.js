@@ -41,7 +41,7 @@ if (!isAdmin) {
 }
 
 if (isLogin == 'true') {
-    
+
     var login = document.querySelector("#sign-in");
     login.innerHTML = `
             <div class="header__sign-in-true">
@@ -54,13 +54,48 @@ if (isLogin == 'true') {
             </div>`
     const logout = document.querySelector("#log-out")
     logout.addEventListener("click", (e) => {
-                setCookie("isLogin", "false", 1);
-                var login = document.querySelector("#sign-in");
-                location.reload;
-            })
+        setCookie("isLogin", "false", 1);
+        var login = document.querySelector("#sign-in");
+        location.reload;
+    })
+    var cmtBox = document.querySelector('#userCmtBox')
+    cmtBox.innerHTML = `<div class="review__input">
+    <div class="review__avt">
+        <img src="../assets/images/dungct.jpg" alt="" srcset="">
+    </div>      
+    <form>
+        <input type="text" name="cmt" id="newComment" placeholder="Write Comment">
+    <form>
+    </div>`
+    var input = cmtBox.querySelector('form')
+    input.addEventListener("submit", (e) =>{
+        e.preventDefault()
+        const newCmt = document.createElement("div")
+        const inputCmt = e.target.cmt.value;
+        newCmt.innerHTML=`
+            <div class="review__cmtBox">
+                    <div class="review__input">
+                        <div class="review__avt">
+                            <img src="../assets/images/dungct.jpg" alt="" srcset="">
+                        </div>      
+                        <div class="review__box">
+                            <div class="review__name">
+                                <p>Nguyễn Dũng</p>
+                                <span>Just now</span>
+                            </div>
+                            <div class="review__comment">
+                                ${inputCmt}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        `
+        const list = document.querySelector(".review__List")
+        list.appendChild(newCmt)
+    })
 }
 if (isLogin == 'true' && isAdmin == 'true') {
-    
+
     var login = document.querySelector("#sign-in");
     login.innerHTML = `
             <div class="header__sign-in-true">
@@ -73,11 +108,47 @@ if (isLogin == 'true' && isAdmin == 'true') {
             </div>`
     const logout = document.querySelector("#log-out")
     logout.addEventListener("click", (e) => {
-                setCookie("isAdmin", "false", 1);
-                setCookie("isLogin", "false", 1);
-                var login = document.querySelector("#sign-in");
-                location.reload;
-            })
+        setCookie("isAdmin", "false", 1);
+        setCookie("isLogin", "false", 1);
+        var login = document.querySelector("#sign-in");
+        location.reload;
+    })
+    var cmtBox = document.querySelector('#userCmtBox')
+    cmtBox.innerHTML = `<div class="review__input">
+    <div class="review__avt">
+        <img src="../assets/images/dungct.jpg" alt="" srcset="">
+    </div>      
+    <form>
+        <input type="text" name="cmt" id="newComment" placeholder="Write Comment">
+    <form>
+    </div>`
+    var input = cmtBox.querySelector('form')
+    input.addEventListener("submit", (e) =>{
+        e.preventDefault()
+        const newCmt = document.createElement("div")
+        const inputCmt = e.target.cmt.value;
+        newCmt.innerHTML=`
+            <div class="review__cmtBox">
+                    <div class="review__input">
+                        <div class="review__avt">
+                            <img src="../assets/images/dungct.jpg" alt="" srcset="">
+                        </div>      
+                        <div class="review__box">
+                            <div class="review__name">
+                                <p>Admin Dut</p>
+                                <span>Just now</span>
+                            </div>
+                            <div class="review__comment">
+                                ${inputCmt}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        `
+        const list = document.querySelector(".review__List")
+        list.appendChild(newCmt)
+        e.target.cmt.value = ``;
+    })
 }
 
 // if( isLogin == 'false'){

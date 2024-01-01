@@ -250,7 +250,6 @@ body{
 
 /* End footer */
 
-.header__list{
-    display: flex;
-    align-items: center;
+.header__news a{
+    padding-top: 18px;
 }
