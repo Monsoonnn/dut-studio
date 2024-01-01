@@ -353,3 +353,7 @@
 .active{
     display: flex;
 }
+
+#eyeicon{
+    cursor: pointer;
+}

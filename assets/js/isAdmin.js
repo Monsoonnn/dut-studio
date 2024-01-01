@@ -38,3 +38,13 @@ buttonLogin.addEventListener("click", (e) =>{
     setCookie("isLogin","true",1);
     setCookie("isAdmin","true",1);
 })
+
+const eyeicon = document.querySelector("#eyeicon")
+const password = document.querySelector("#password")
+eyeicon.addEventListener("click",(e) => {
+    if(password.type == "password"){
+        password.type = "text"
+    }else{
+        password.type = "password"
+    }
+})
