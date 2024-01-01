@@ -92,6 +92,7 @@ if (isLogin == 'true') {
         `
         const list = document.querySelector(".review__List")
         list.appendChild(newCmt)
+        e.target.cmt.value = ``;
     })
 }
 if (isLogin == 'true' && isAdmin == 'true') {
