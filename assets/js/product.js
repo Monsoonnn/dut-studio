@@ -135,7 +135,7 @@ if (isLogin == 'true' && isAdmin == 'true') {
                         </div>      
                         <div class="review__box">
                             <div class="review__name">
-                                <p>Admin Dut</p>
+                                <p class="admin">Admin DUT</p>
                                 <span>Just now</span>
                             </div>
                             <div class="review__comment">

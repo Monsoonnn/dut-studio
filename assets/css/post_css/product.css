@@ -254,3 +254,6 @@ a:hover{
     margin: 0 auto;
     font-size: 25px;
 }
+.review__name .admin{
+    color: #B20303;
+}
